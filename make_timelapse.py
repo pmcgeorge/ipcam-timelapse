@@ -5,6 +5,8 @@ import os
 import shutil
 import sys
 import cli_utils
+import time
+
 
 # Check arguments for fps
 output_fps = float(cli_utils.get_cli_arg_with_default("--fps", 5.0))
@@ -48,7 +50,8 @@ images.sort()
 frame = cv2.imread(os.path.join(source_dir, images[0]))
 height, width, layers = frame.shape
 
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
+#fourcc = cv2.VideoWriter_fourcc(*'XVID')
+fourcc = cv2.cv.CV_FOURCC(*'XVID')
 video = cv2.VideoWriter(save_path, fourcc, output_fps, (width,height))
 
 for image in images:
