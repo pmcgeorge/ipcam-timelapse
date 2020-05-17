@@ -1,4 +1,7 @@
 #!/usr/bin/python
+
+# Credit to Tom Catullo https://github.com/Tom25
+
 from datetime import date, timedelta
 import cv2
 import os

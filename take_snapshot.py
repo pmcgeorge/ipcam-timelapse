@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+# Credit to Tom Catullo https://github.com/Tom25
+
+
+
 import datetime
 import cv2
 import os
